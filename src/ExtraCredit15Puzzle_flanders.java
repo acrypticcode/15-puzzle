@@ -15,7 +15,6 @@ public class ExtraCredit15Puzzle_flanders extends Application implements EventHa
     GridPane p = new GridPane();
     Button[] pieces = new Button[16];
 
-    //figure out how to activate this without lambda and handle()
     @Override
     public void handle (ActionEvent e) {
         Button clicked_btn;
@@ -26,7 +25,6 @@ public class ExtraCredit15Puzzle_flanders extends Application implements EventHa
         clicked_btn_index = findPiece(clicked_btn.getText());
         blank_btn_index = findPiece("");
 
-        //I need to adjust this section
         p.getChildren().remove(0,16);
         if (clicked_btn_index==blank_btn_index+4
         ||clicked_btn_index==blank_btn_index+1 && blank_btn_index%4 != 3
