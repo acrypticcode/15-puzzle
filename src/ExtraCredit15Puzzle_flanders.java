@@ -135,7 +135,6 @@ public class ExtraCredit15Puzzle_flanders extends Application implements EventHa
             p.add(pieces[i],i%4,i/4);
         }
 
-        // code goes here!
         primaryStage.setTitle("Fifteen Puzzle");
         primaryStage.setScene(scene);
         primaryStage.show();
